@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Shaz AI Studio</title>
+<style>
+body{
+font-family:Arial;
+background:#f5f5f5;
+padding:20px;
+}
+.box{
+background:white;
+padding:20px;
+border-radius:10px;
+max-width:800px;
+margin:auto;
+}
+textarea{
+width:100%;
+height:120px;
+padding:10px;
+}
+button{
+padding:10px 20px;
+background:#10a37f;
+color:white;
+border:none;
+border-radius:5px;
+cursor:pointer;
+margin-top:10px;
+}
+</style>
+</head>
+<body>
+
+<div class="box">
+<h1>Shaz AI Studio</h1>
+
+<h2>AI Video Maker</h2>
+
+<textarea id="prompt"
+placeholder="Enter video prompt...
+Example: Cute orange cat playing football in a park"></textarea>
+
+<button onclick="generateVideo()">
+Generate Video
+</button>
+
+<div id="result"></div>
+
+</div>
+
+<script>
+function generateVideo(){
+let prompt = document.getElementById("prompt").value;
+
+document.getElementById("result").innerHTML =
+"<h3>Generating Video...</h3>" +
+"<p>Prompt: " + prompt + "</p>" +
+"<p>Connect an AI video API here.</p>";
+}
+</script>
+
+</body>
+</html>
