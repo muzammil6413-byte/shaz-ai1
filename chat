@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Shaz AI</title>
+<style>
+body{
+font-family:Arial;
+background:#202123;
+color:white;
+margin:0;
+}
+.chat{
+height:85vh;
+overflow:auto;
+padding:20px;
+}
+.input{
+position:fixed;
+bottom:0;
+width:100%;
+padding:10px;
+background:#343541;
+}
+input{
+width:80%;
+padding:12px;
+}
+button{
+padding:12px;
+}
+</style>
+</head>
+<body>
+
+<div class="chat" id="chat"></div>
+
+<div class="input">
+<input id="prompt" placeholder="Ask anything...">
+<button onclick="send()">Send</button>
+</div>
+
+<script>
+function send(){
+
+let text =
+document.getElementById("prompt").value;
+
+let chat =
+document.getElementById("chat");
+
+chat.innerHTML +=
+"<p><b>You:</b> "+text+"</p>";
+
+if(text.toLowerCase().includes("image")){
+chat.innerHTML +=
+"<p><b>Shaz AI:</b> Generating image...</p>";
+}
+else if(text.toLowerCase().includes("video")){
+chat.innerHTML +=
+"<p><b>Shaz AI:</b> Generating video...</p>";
+}
+else if(text.toLowerCase().includes("script")){
+chat.innerHTML +=
+"<p><b>Shaz AI:</b> Writing script...</p>";
+}
+else{
+chat.innerHTML +=
+"<p><b>Shaz AI:</b> AI response here...</p>";
+}
+
+}
+</script>
+
+</body>
+</html>
