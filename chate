@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h2>AI Chat</h2>
+
+<input id="msg">
+
+<button onclick="send()">
+Send
+</button>
+
+<div id="result"></div>
+
+<script>
+async function send(){
+
+const response =
+await fetch("/chat",{
+method:"POST",
+headers:{
+"Content-Type":"application/json"
+},
+body:JSON.stringify({
+message:msg.value
+})
+});
+
+const data =
+await response.json();
+
+result.innerHTML =
+data.reply;
+}
+</script>
+
+</body>
+</html>
