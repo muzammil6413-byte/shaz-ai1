@@ -1,0 +1,29 @@
+<input id="topic">
+
+<button onclick="createScript()">
+Create Script
+</button>
+
+<div id="output"></div>
+
+<script>
+async function createScript(){
+
+const response =
+await fetch("/script",{
+method:"POST",
+headers:{
+"Content-Type":"application/json"
+},
+body:JSON.stringify({
+topic:topic.value
+})
+});
+
+const data =
+await response.json();
+
+output.innerHTML =
+data.script;
+}
+</script>
