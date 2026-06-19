@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Shaz AI Studio</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h1>🚀 Shaz AI Studio</h1>
+
+<div class="grid">
+
+<a href="chat.html">💬 AI Chat</a>
+
+<a href="image.html">🖼 Image Generator</a>
+
+<a href="video.html">🎥 Video Generator</a>
+
+<a href="tts.html">🎤 Text To Speech</a>
+
+<a href="script.html">📄 Script Writer</a>
+
+<a href="shorts.html">📺 Shorts Creator</a>
+
+</div>
+
+</body>
+</html>
