@@ -1,0 +1,16 @@
+shaz-ai-studio/
+│
+├── public/
+│   ├── index.html
+│   ├── chat.html
+│   ├── image.html
+│   ├── video.html
+│   ├── tts.html
+│   ├── script.html
+│   ├── shorts.html
+│   ├── style.css
+│   └── app.js
+│
+├── server.js
+├── package.json
+└── .env
