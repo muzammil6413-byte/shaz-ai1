@@ -1,0 +1,7 @@
+<h1>🖼 Image Generator</h1>
+
+<textarea placeholder="Image Prompt"></textarea>
+
+<button>
+Generate Image
+</button>
