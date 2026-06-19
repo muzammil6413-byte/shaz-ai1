@@ -1,0 +1,9 @@
+<h1>📺 YouTube Shorts Creator</h1>
+
+<textarea
+placeholder="Shorts Idea">
+</textarea>
+
+<button>
+Generate Shorts
+</button>
