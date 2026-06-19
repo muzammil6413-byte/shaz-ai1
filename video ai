@@ -1,0 +1,7 @@
+<h1>🎥 Video Generator</h1>
+
+<textarea placeholder="Video Prompt"></textarea>
+
+<button>
+Generate Video
+</button>
